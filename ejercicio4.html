@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt uso</title>
+</head>
+<body>
+    <center><h1>USO DE prompt</h1></center>
+</body>
+</html>
+
+<script>
+    function salto(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+    let num1=parseInt(prompt("num1"));
+    let num2=parseInt(prompt("num2"));
+
+    function mostrarMen(mensaje){
+        document.write(mensaje);
+        salto();
+    }
+
+    function sumador(a,b){
+        return a+b;
+    }
+
+    function restador(a,b){
+        return a-b;
+    }
+
+    function multiplicador(a,b){
+        return a*b;
+    }
+
+    function divididor(a,b){
+        return a/b;
+    }
+
+    let resultado1=sumador(num1, num2);
+    let resultado2=restador(num1, num2);
+    let resultado3=multiplicador(num1, num2);
+    let resultado4=divididor(num1, num2);
+
+    alert("es: ", resultado1)
+    console.log("el resultado es: ", resultado1)
+
+    alert("es: ", resultado2)
+    console.log("el resultado es: ", resultado2)
+
+    alert("es: ", resultado3)
+    console.log("el resultado es: ", resultado3)
+
+    alert("es: ", resultado4)
+    console.log("el resultado es: ", resultado4)
+</script>

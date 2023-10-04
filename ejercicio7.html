@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+//ENCRIPTA LA FRASE, ASOCIANDO UN VALOR A UNA LETRA O A UN ESPACIO DENTRO DE LA FUNCIÓN equivaler
+//ENTONCES CREA UN NUMERO QUE ES LA POSICIÓN MODIFICADA EN EL ABECEDARIO, TRAS SUMARLE EL codificador
+//QUE ES LA LLAVE
+
+//FALTA MEJORAR LA PRESENTACIÓN DE 
+    
+    
+    function equivaler(letra){
+        switch(letra){
+            case "a":
+                {
+                    return 1;
+                }
+            break;
+
+            case "b":
+                {
+                    return 2;
+                }
+            break;
+            case "c":
+                {
+                    return 3;
+                }
+            break;
+            case "d":
+                {
+                    return 4;
+                }
+            break;
+            case "c":
+                {
+                    return 5;
+                }
+            break;
+            case "d":
+                {
+                    return 6;
+                }
+            break;
+            case "e":
+                {
+                    return 7;
+                }
+            break;
+            case "f":
+                {
+                    return 8;
+                }
+            break;
+            case "g":
+                {
+                    return 9;
+                }
+            break;
+            case "h":
+                {
+                    return 10;
+                }
+            break;
+            case "i":
+                {
+                    return 11;
+                }
+            break;
+            case "j":
+                {
+                    return 12;
+                }
+            break;
+            case "k":
+                {
+                    return 13;
+                }
+            break;
+            case "l":
+                {
+                    return 14;
+                }
+            break;
+            case "m":
+                {
+                    return 15;
+                }
+            break;
+            case "n":
+                {
+                    return 16;
+                }
+            break;
+            case "o":
+                {
+                    return 17;
+                }
+            break;
+            case "p":
+                {
+                    return 18;
+                }
+            break;
+            case "q":
+                {
+                    return 19;
+                }
+            break;
+            case "r":
+                {
+                    return 20;
+                }
+            break;
+            case "s":
+                {
+                    return 21;
+                }
+            break;
+            case "t":
+                {
+                    return 22;
+                }
+            break;
+            case "u":
+                {
+                    return 23;
+                }
+            break;
+            case "v":
+                {
+                    return 24;
+                }
+            break;
+            case "w":
+                {
+                    return 25;
+                }
+            break;
+            case "x":
+                {
+                    return 26;
+                }
+            break;
+            case "y":
+                {
+                    return 27;
+                }
+            break;
+            case "z":
+                {
+                    return 28;
+                }
+            break;
+            case " ":
+                {
+                    return 29;
+                }
+            default:
+                {
+                    return "NO EXISTE LA LETRA";
+                }
+            break;
+        }
+    }
+    
+    
+    let frase= prompt("Introduzca su frase para convertir: ")
+
+    let counter=0;
+
+    let encriptado=[];
+    let llavero=[];
+    
+    while(counter<=frase.length-1){
+        let codificador=Math.round(Math.random()*10)
+        console.log(equivaler(frase[counter]));
+        let codificado= equivaler(frase[counter])+codificador;
+        encriptado[counter]=codificado;
+        llavero[counter]=codificador;
+        
+        counter++;
+    }
+    document.write("Codificado:")
+    for(let k=0;k<=encriptado.length-1;k++){
+        
+        document.write(" ", encriptado[k])
+    }
+    document.write("<br>")
+    document.write("Llave:")
+    for(let k=0;k<=llavero.length-1;k++){
+        document.write(" ", llavero[k])
+    }
+
+</script>

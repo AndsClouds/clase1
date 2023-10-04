@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <center><h1>JOGO</h1></center>
+</body>
+</html>
+
+<script>
+    function salto(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostrarMen(mensaje){
+        document.write(mensaje);
+        salto();
+    }
+
+    var numAdv= Math.round(Math.random()*10);
+    var vidas=3;
+    var contador=1;
+
+    while(contador<=vidas){
+        var introducido=parseInt(prompt("Adivine del 1 al 10: "));
+        if(introducido==numAdv){
+            alert("intento: "+contador+"el numero"+numeroAdv);
+            break;
+        }
+        else{
+            alert("perdedor");
+        }
+        contador++;
+    }
+    alert("fin");
+</script>

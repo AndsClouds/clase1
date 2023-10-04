@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <center><h1>Ejercicio 3</h1></center>
+</body>
+</html>
+
+<script>
+    function adicion(x,y){
+        return muestra("Suma: ", x, y, x+y);
+    }
+
+    function sustraccion(x,y){
+        return muestra("Resta: ", x, y, x-y);
+    }
+
+    function divididor(x,y){
+        return muestra("División: ", x, y, x/y);
+    }
+
+    function multiplicador(x,y){
+        return muestra("Multiplicación: ", x, y, x*y);
+    }
+
+    function cuadrado(x){
+        return muestra("Cuadrado: ", x, x, x*x);
+    }
+
+    function muestra(operacion, n1, n2, r){
+        if(operacion==="Suma: "){
+            return document.write(operacion, n1, " + ", n2, "<br> Resultado: ", r, "<br>")
+        } else if(operacion==="Resta: "){
+            return document.write(operacion, n1, " - ", n2, "<br> Resultado: ", r, "<br>")
+        }else if(operacion==="Multiplicación: "){
+            return document.write(operacion, n1, " * ", n2, "<br> Resultado: ", r, "<br>")
+        }else if(operacion==="División: "){
+            return document.write(operacion, n1, " / ", n2, "<br> Resultado: ", r, "<br>")
+        }else if(operacion==="Cuadrado: "){
+            return document.write(operacion, n1, " * ", n2, "<br> Resultado: ", r, "<br>")
+        }
+    }
+
+    let n1=6;
+    let n2=3;
+
+    adicion(n1,n2);
+    sustraccion(n1,n2);
+    multiplicador(n1,n2)
+    divididor(n1,n2);
+    cuadrado(n1);
+    cuadrado(n2);
+
+    alert("checate el console log")
+    console.log("hols")
+</script>

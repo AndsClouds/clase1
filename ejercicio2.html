@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Diseño web 2</h1>
+</body>
+</html>
+
+<script>
+    let a=0;    //Inicialización de variables
+    var b=0;    //No se suele usar esta línea
+    const c=3;  //Sirve para declarar funciones tmb
+
+    function mostrar(mensaje){
+        document.write(mensaje)//escribe string en la pagina
+        document.write("<br>")//para usar etiquetas guardar en variable o poner entre ""
+        document.write(mensaje)
+    }
+
+    mostrar("aló poli")
+
+    function sumador(x,y){
+        return x+y;
+    }
+    function divididor(x,y){
+        return x/y;
+    }
+
+    var mi_division=divididor(8,4);    
+    mostrar(sumador(3,5));
+    mostrar(mi_division);
+    console.log("result divi: ", mi_division);
+</script>
